@@ -1,0 +1,23 @@
+<div id="<%= dom_id post %>" class="post-container">
+  <p>
+    <%= link_to "", post, class: "post-link" %>
+  </p>
+
+  <%= button_to "like", likes_path, params: { like: {part_id: post.id }}, method: :post %>
+
+  <% post.images.each do |image| %>
+    <%= image_tag(image, style: "object-fit: cover; width: 300px; height: 600px;") %>
+  <% end %>
+  <br>
+  <br>
+   <p>
+    <%= post.title %>
+  </p>
+  <p>
+    <%= link_to post.user.email, post.user %>
+  </p>
+</div>
+
+
+
+
