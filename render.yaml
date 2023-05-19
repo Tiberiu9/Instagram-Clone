@@ -6,7 +6,7 @@
 
 services:
   - type: web
-    name: Friends-list
+    name: Instagram-Clone
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: bundle exec rails s
