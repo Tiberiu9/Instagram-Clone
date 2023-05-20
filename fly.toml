@@ -19,5 +19,5 @@ console_command = "/rails/bin/rails console"
   url_prefix = "/"
 
 [mounts]
-  source = "insta_clone_data"
-  destination = "/data"
+source="insta_clone_data"
+destination="/storage"
