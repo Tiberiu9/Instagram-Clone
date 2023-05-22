@@ -1,7 +1,7 @@
 # fly.toml app configuration file generated for insta-clone on 2023-05-20T12:57:55+03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
+
 
 app = "insta-clone"
 primary_region = "otp"
@@ -19,5 +19,5 @@ console_command = "/rails/bin/rails console"
   url_prefix = "/"
 
 [mounts]
-source="insta_clone_data"
-destination="/storage"
+  source= "insta_clone_data"
+  destination= "/data"
